@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <input type="text" name="message" id="message" />
+        <button onclick="alertMessage()">Say</button>
+        <button onclick="logMessage()">log</button>
+      </div>
+    </main>
+
+    <script>
+      console.log("Hello World");
+
+      function alertMessage() {
+        console.log("Some message in the console...");
+        let content = document.getElementById("message").value;
+        alert(content);
+      }
+    </script>
+    <script src="./html.js"></script>
+  </body>
+</html>
